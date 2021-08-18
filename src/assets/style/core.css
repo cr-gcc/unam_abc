@@ -1,0 +1,61 @@
+body{
+  font-family: 'Quicksand', sans-serif;
+}
+
+main{
+  flex: 1 0 auto;
+}
+
+#app{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/*PARALLAX*/
+.parallaxg{
+  padding-top: 150px; 
+  padding-bottom: 150px; 
+  overflow: hidden; 
+  position: relative; 
+  width: 100%; 
+  background-attachment: fixed; 
+  background-size: cover; 
+  -moz-background-size: cover; 
+  -webkit-background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: top center;
+}
+
+.pi-one{
+  background-image: url(https://scontent.fmex15-1.fna.fbcdn.net/v/t31.18172-8/s960x960/29060250_177064182928789_4241154734695324164_o.jpg?_nc_cat=104&ccb=1-5&_nc_sid=e3f864&_nc_eui2=AeGzhwFaBqxznUhWz5UMczAnNIjjs-RlBgQ0iOOz5GUGBGsClKxgx4VOpIsnvlnz4mk&_nc_ohc=17TUpPDswxUAX_uxYw1&_nc_ht=scontent.fmex15-1.fna&oh=95a8348d24f8c28ceeeb571e0e70480b&oe=613FDFA2);
+}
+.pi-two{
+  background-image: url(https://e00-marca.uecdn.es/assets/multimedia/imagenes/2017/05/19/14951910928694.png);
+}
+.pi-three{
+  background-image: url(https://www.quever.news/u/fotografias/m/2021/2/26/f608x342-7265_36988_0.jpg);
+}
+.pi-four{
+  background-image: url(https://www.observatorioesclerosismultiple.com/fileadmin/user_upload/10-_preguntas-frecuentes-coronavirus-esclerosis-multiple.jpg);
+}
+
+.h2t{
+  letter-spacing: 10px; 
+  text-align: center; 
+  color: #fff;
+  font-weight: 600; 
+  text-transform: uppercase; 
+  z-index: 10;
+}
+
+.hshadow{
+  background-color: rgba(0,0,0,.4);
+  padding: 0 20px;
+  border-radius: 20px;
+}
+
+footer{
+  background: #343a40;
+  color: #fff;
+}
