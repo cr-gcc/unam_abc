@@ -79,6 +79,18 @@
         <li>¿Por qué la bicicleta es un medio de transporte sustentable?</li>
       </ul>
     </b-container>
+    <b-container class="mt-4 mb-5">
+      <div class="row">
+        <div class="col-md-6">
+          
+        </div>
+        <div class="col-md-6">
+          <iframe src="https://www.instagram.com/p/CS7nHqkLJPH/embed" width="400" height="600" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        </div>  
+      </div>
+      
+    </b-container>  
+
   </div>
 </template>
 <script>
@@ -103,6 +115,14 @@
       .then((res) => {
         this.ranking = res.data.topLevels
       })
+      //
+      /*
+      axios
+      .get("https://api.instagram.com/oembed/?url=https://www.instagram.com/p/CS7nHqkLJPH/?utm_source=ig_web_copy_link")
+      .then((res) =>{
+        console.log(res)
+      })
+      */
     }
   }
 </script>
