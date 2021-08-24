@@ -15,16 +15,48 @@
     </section>
     <b-container class="mt-4 mb-5 text-justify">
       <p>Este concurso tiene por objetivo promover el uso de la bicicleta entre la comunidad universitaria, impulsar estilos de vida más saludables, generar condiciones climáticas favorables y contribuir a la toma de conciencia de estos temas en una escala global.</p>
-      <h5>-Bases</h5>
+      <h5><span class="accent">-</span> Bases</h5>
       <ul>
-        <li>Podrán participar estudiantes, personal académico y personal administrativo, vigentes, de las entidades y dependencias de la Universidad Nacional Autónoma de México localizadas en la Zona Metropolitana del Valle de México, con apego a las normas de seguridad sanitaria definidas por las autoridades federal y locales.</li>
-        <li>Podrán participar del 1º al 31 de octubre del presente año, realizando recorridos en bicicleta, en cualquier localización geográfica, considerando que las actividades académicas presenciales en los planteles, en el periodo señalado, puede seguir limitada.</li>
-        <li>El registro y participación se realizará únicamente a través de la aplicación móvil definida por los organizadores, denominada “Naviki”, la cual se encuentra disponible, gratuitamente, dando clic: <a href="https://www.go-abc.org/for-participants/get-app/">AQUÍ</a></li>
-        <li>Se premiará quienes queden dentro de los primeros XX lugares, de acuerdo con las tablas de resultados oficiales (kilómetros acumulados) emitidas y publicadas por la organización <i><a href="https://www.go-abc.org/start/">Academic Bicycle Challenge</a></i></li>
-        <li>Los resultados serán inapelables. El kilometraje de cada participante será medido por la organización Academic Bicycle Challenge, a través de su aplicación, por lo que la UNAM, no tiene injerencia alguna. </li>
-        <li>Quienes resulten ganadores, serán contactados vía correo electrónico para verificar la vigencia de su registro como parte de la comunidad universitaria.</li>
-        <li>La entrega de premios se llevará a cabo en un lapso no mayor a tres semanas después de concluido el mes de octubre de 2021, siempre que las condiciones sanitarias lo permitan. Para tal efecto se contactará a las personas ganadoras vía correo electrónico y se les notificarán los detalles respecto a la fecha, hora, lugar y condiciones de la entrega de premios.</li>
-        <li>Toda información referente a esta actividad se publicará a través las redes de la Dirección General de Atención a la Comunidad, de la Coordinación Universitaria para la Sustentabilidad y de la Dirección General de Servicios Generales y Movilidad </li>
+        <li>
+          <span>
+            Podrán participar estudiantes, personal académico y personal administrativo, vigentes, de las entidades y dependencias de la Universidad Nacional Autónoma de México localizadas en la Zona Metropolitana del Valle de México, con apego a las normas de seguridad sanitaria definidas por las autoridades federal y locales.
+          </span>
+        </li>
+        <li>
+          <span>
+            Podrán participar del 1º al 31 de octubre del presente año, realizando recorridos en bicicleta, en cualquier localización geográfica, considerando que las actividades académicas presenciales en los planteles, en el periodo señalado, puede seguir limitada.
+          </span>
+        </li>
+        <li>
+          <span>
+            El registro y participación se realizará únicamente a través de la aplicación móvil definida por los organizadores, denominada “Naviki”, la cual se encuentra disponible, gratuitamente, dando clic: <a href="https://www.go-abc.org/for-participants/get-app/">AQUÍ</a>
+          </span>
+        </li>
+        <li>
+          <span>
+            Se premiará quienes queden dentro de los primeros XX lugares, de acuerdo con las tablas de resultados oficiales (kilómetros acumulados) emitidas y publicadas por la organización <i><a href="https://www.go-abc.org/start/">Academic Bicycle Challenge</a></i>
+          </span>
+        </li>
+        <li>
+          <span>
+            Los resultados serán inapelables. El kilometraje de cada participante será medido por la organización Academic Bicycle Challenge, a través de su aplicación, por lo que la UNAM, no tiene injerencia alguna.
+          </span>
+        </li>
+        <li>
+          <span>
+            Quienes resulten ganadores, serán contactados vía correo electrónico para verificar la vigencia de su registro como parte de la comunidad universitaria.
+          </span>
+        </li>
+        <li>
+          <span>
+            La entrega de premios se llevará a cabo en un lapso no mayor a tres semanas después de concluido el mes de octubre de 2021, siempre que las condiciones sanitarias lo permitan. Para tal efecto se contactará a las personas ganadoras vía correo electrónico y se les notificarán los detalles respecto a la fecha, hora, lugar y condiciones de la entrega de premios.
+          </span>
+        </li>
+        <li>
+          <span>
+            Toda información referente a esta actividad se publicará a través las redes de la Dirección General de Atención a la Comunidad, de la Coordinación Universitaria para la Sustentabilidad y de la Dirección General de Servicios Generales y Movilidad 
+          </span>
+        </li>
       </ul>
     </b-container>
     <!--RANKING-->
@@ -38,12 +70,35 @@
     <b-container class="mt-4 mb-5 text-justify">
       <b-table-simple small responsive>
         <b-tbody>
-          <b-tr v-for="(item, ind) in ranking">
+          <!--R-MUNDIAL-->
+          <b-tr v-for="(item, ind) in ranking.slice(0,5)">
+            <b-td class="align-middle">
+              {{ ind+1 }}
+            </b-td>
             <b-td class="align-middle">
               <img :src="item.logo" width="70px" alt="">
             </b-td>
-            <b-td class="align-middle">{{ item.title }}</b-td>
-            <b-td class="align-middle">{{ item.totalKmProportional }} km</b-td>
+            <b-td class="align-middle">
+              {{ item.title }}
+            </b-td>
+            <b-td class="align-middle">
+              {{ item.totalKmProportional }} km
+            </b-td>
+          </b-tr>
+          <!--R-UNAM-->
+          <b-tr v-for="i in runam">
+            <b-td class="align-middle">
+              {{runam.number}}
+            </b-td>
+            <b-td class="align-middle">
+              <img :src="runam.logo" width="70px" alt="">
+            </b-td>
+            <b-td class="align-middle">
+              {{ runam.title }}
+            </b-td>
+            <b-td class="align-middle">
+              {{ runam.km }} km
+            </b-td>
           </b-tr>
         </b-tbody>
       </b-table-simple>
@@ -70,22 +125,49 @@
     </section>
     <b-container class="mt-4 mb-5 text-justify">
       <ul>
-        <li>¿Puedo participar si soy ex-alumno/a de la UNAM?</li>
-        <li>¿Puedo participar si mi facultad/escuela/instituto se encuentra fuera de la Zona Metropolitana del Valle de México?</li>
-        <li>¿Cómo se contarán los kilómetros que recorra?</li>
-        <li>¿Hay un límite de kilómetros diarios por recorrer?</li>
-        <li>¿Cómo puedo participar si no tengo una bici?</li>
-        <li>¿Cómo sabré si soy ganador/a?</li>
-        <li>¿Por qué la bicicleta es un medio de transporte sustentable?</li>
+        <li>
+          <span>¿Puedo participar si soy ex-alumno/a de la UNAM?</span>
+        </li>
+        <li>
+          <span>¿Puedo participar si mi facultad/escuela/instituto se encuentra fuera de la Zona Metropolitana del Valle de México?
+          </span>
+        </li>
+        <li>
+          <span>¿Cómo se contarán los kilómetros que recorra?</span>  
+        </li>
+        <li>
+          <span>¿Hay un límite de kilómetros diarios por recorrer?
+          </span>
+        </li>
+        <li>
+          <span>¿Cómo puedo participar si no tengo una bici?
+          </span>
+        </li>
+        <li>
+          <span>¿Cómo sabré si soy ganador/a?
+          </span>
+        </li>
+        <li>
+          <span>¿Por qué la bicicleta es un medio de transporte sustentable?
+          </span>
+        </li>
       </ul>
     </b-container>
+    <!--REDES SOCIALES-->
+    <section ref="preguntas" id="redes">
+      <div class="parallaxg pi-five">
+        <h2 class="h2t">
+          <span class="hshadow">Redes sociales</span>
+        </h2>
+      </div>
+    </section>
     <b-container class="mt-4 mb-5">
       <div class="row">
         <div class="col-md-6">
-          
+          <img src="@/assets/images/siguenos.jpg" alt="Siguenos en Instagram" width="100%" height="594">
         </div>
         <div class="col-md-6">
-          <iframe src="https://www.instagram.com/p/CS7nHqkLJPH/embed" width="400" height="600" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+          <iframe src="https://www.instagram.com/p/CS7nHqkLJPH/embed" width="100%" height="600" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
         </div>  
       </div>
       
@@ -98,7 +180,15 @@
     name: "Home",
     data(){
       return{
-        ranking: []
+        ranking: [],
+        runam: [
+          {
+            number: 0, 
+            logo: "", 
+            title: "",
+            km: 0
+          }
+        ]
       }
     },
     methods:{
@@ -110,19 +200,25 @@
     },
     //
     created(){
+      let index
       axios
       .get("https://www.naviki.org/naviki/api/v6/Contest/findTopLevels/51091/?limit=200")
       .then((res) => {
         this.ranking = res.data.topLevels
+        //
+        this.ranking.sort(function (a,b){
+          return parseFloat(b.totalKmProportional) - parseFloat(a.totalKmProportional) 
+        })
+        //
+        index = this.ranking.findIndex(function(item, i){
+          return item.shortTitle === "UNAM"
+        })
+        this.runam.number = index+1
+        this.runam.logo = this.ranking[index].logo
+        this.runam.title = this.ranking[index].title
+        this.runam.km = this.ranking[index].totalKmProportional
       })
-      //
-      /*
-      axios
-      .get("https://api.instagram.com/oembed/?url=https://www.instagram.com/p/CS7nHqkLJPH/?utm_source=ig_web_copy_link")
-      .then((res) =>{
-        console.log(res)
-      })
-      */
+
     }
   }
 </script>

@@ -1,8 +1,7 @@
 <template>
   <div id="header">
-    <b-navbar toggleable="lg" type="dark" variant="dark">
+    <b-navbar toggleable="lg" type="dark" variant="rd">
       <b-navbar-brand href="#">UNAM ABC</b-navbar-brand>
-
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
@@ -32,6 +31,7 @@
             <b-nav-item href="#ranking">Ranking</b-nav-item>
             <b-nav-item href="#premios">Premios</b-nav-item>
             <b-nav-item href="#preguntas">Preguntas Frecuentes</b-nav-item>
+            <b-nav-item href="#redes">Redes Sociales</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
