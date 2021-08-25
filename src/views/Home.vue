@@ -7,15 +7,15 @@
     </b-container>
     <!--BASES-->
     <section ref="bases" id="bases">
-      <div class="parallaxg pi-one">
+      <div class="parallaxg" :style="piOne">
         <h2 class="h2t">
-          <span class="hshadow">Academic Bicycle Challenge</span>
+          <span class="hshadow hst">Academic Bicycle Challenge</span>
         </h2>
       </div>
     </section>
     <b-container class="mt-4 mb-5 text-justify">
       <p>Este concurso tiene por objetivo promover el uso de la bicicleta entre la comunidad universitaria, impulsar estilos de vida más saludables, generar condiciones climáticas favorables y contribuir a la toma de conciencia de estos temas en una escala global.</p>
-      <h5><span class="accent">-</span> Bases</h5>
+      <h5><span class="accent"><strong>-</strong></span> <span class="bases-title">Bases</span></h5>
       <ul>
         <li>
           <span>
@@ -61,9 +61,9 @@
     </b-container>
     <!--RANKING-->
     <section ref="ranking" id="ranking">
-      <div class="parallaxg pi-two">
+      <div class="parallaxg" :style="piTwo">
         <h2 class="h2t">
-          <span class="hshadow">Ranking Mundial</span>
+          <span class="hshadow hst">Ranking Mundial</span>
         </h2>
       </div>
     </section>
@@ -88,16 +88,16 @@
           <!--R-UNAM-->
           <b-tr v-for="i in runam">
             <b-td class="align-middle">
-              {{runam.number}}
+              <span class="ur">{{runam.number}}</span>
             </b-td>
             <b-td class="align-middle">
               <img :src="runam.logo" width="70px" alt="">
             </b-td>
             <b-td class="align-middle">
-              {{ runam.title }}
+              <span class="ur">{{ runam.title }}</span>
             </b-td>
             <b-td class="align-middle">
-              {{ runam.km }} km
+              <span class="ur">{{ runam.km }} km</span>
             </b-td>
           </b-tr>
         </b-tbody>
@@ -106,9 +106,9 @@
     </b-container>
     <!--PREMIOS-->
     <section ref="premios" id="premios">
-      <div class="parallaxg pi-three">
+      <div class="parallaxg" :style="piThree">
         <h2 class="h2t">
-          <span class="hshadow">Premios</span>
+          <span class="hshadow hst">Premios</span>
         </h2>
       </div>
     </section>
@@ -117,9 +117,9 @@
     </b-container>
     <!--PREGUNTAS-->
     <section ref="preguntas" id="preguntas">
-      <div class="parallaxg pi-four">
+      <div class="parallaxg" :style="piFour">
         <h2 class="h2t">
-          <span class="hshadow">Preguntas Frecuentes</span>
+          <span class="hshadow hst">Preguntas Frecuentes</span>
         </h2>
       </div>
     </section>
@@ -153,26 +153,21 @@
         </li>
       </ul>
     </b-container>
-    <!--REDES SOCIALES-->
+    <!--REDES SOCIALES
     <section ref="preguntas" id="redes">
       <div class="parallaxg pi-five">
         <h2 class="h2t">
-          <span class="hshadow">Redes sociales</span>
+          <span class="hshadow hst">Redes sociales</span>
         </h2>
       </div>
-    </section>
+    </section>-->
     <b-container class="mt-4 mb-5">
       <div class="row">
-        <div class="col-md-6">
-          <img src="@/assets/images/siguenos.jpg" alt="Siguenos en Instagram" width="100%" height="594">
-        </div>
-        <div class="col-md-6">
-          <iframe src="https://www.instagram.com/p/CS7nHqkLJPH/embed" width="100%" height="600" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        <div class="col-md-12 text-center">
+          <iframe src="https://www.instagram.com/p/CS7nHqkLJPH/embed" width="50%" height="600px" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
         </div>  
       </div>
-      
-    </b-container>  
-
+    </b-container>
   </div>
 </template>
 <script>
@@ -186,7 +181,7 @@
             number: 0, 
             logo: "", 
             title: "",
-            km: 0
+            km: 0,
           }
         ]
       }
@@ -198,6 +193,40 @@
         window.scrollTo(0, top);
       }
     },
+    computed: {
+      pi_one(){
+        return require("@/assets/images/parallax/pabc_1.png")
+      },
+      pi_two(){
+        return require("@/assets/images/parallax/pabc_2.png")
+      },
+      pi_three(){
+        return require("@/assets/images/parallax/pabc_3.png")
+      },
+      pi_four(){
+        return require("@/assets/images/parallax/pabc_4.png")
+      },
+      piOne(){
+        return {
+          backgroundImage: `url(${this.pi_one})`
+        }
+      },
+      piTwo(){
+        return {
+          backgroundImage: `url(${this.pi_two})`
+        }
+      },
+      piThree(){
+        return {
+          backgroundImage: `url(${this.pi_three})`
+        }
+      },
+      piFour(){
+        return {
+          backgroundImage: `url(${this.pi_four})`
+        }
+      }
+    }, 
     //
     created(){
       let index
@@ -218,7 +247,6 @@
         this.runam.title = this.ranking[index].title
         this.runam.km = this.ranking[index].totalKmProportional
       })
-
     }
   }
 </script>

@@ -1,37 +1,25 @@
 <template>
   <div id="header">
-    <b-navbar toggleable="lg" type="dark" variant="rd">
-      <b-navbar-brand href="#">UNAM ABC</b-navbar-brand>
+    <b-navbar toggleable="lg" type="dark" variant="blue">
+      <!--<b-navbar-brand href="#">UNAM ABC</b-navbar-brand>-->
+      <b-navbar-brand target="_blank">
+        <a href="https://www.unam.mx/" class="mr-1 ml-1" target="_blank">
+          <img height="60" :src="require('@/assets/images/logos/unam_w.png')" alt="UNAM">
+        </a>
+        <a href="https://www.go-abc.org/es/start/" class="mr-1 ml-1" target="_blank">
+          <img height="60" :src="require('@/assets/images/logos/abc_w.png')" alt="UNAM">
+        </a>
+        <router-link to="/" class="mr-1 ml-1">
+          <img height="60" :src="require('@/assets/images/logos/abc_unam_w.png')" alt="UNAM">
+        </router-link>
+      </b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
-          <!--
-            <b-nav-form>
-              <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
-              <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
-            </b-nav-form>
-
-            <b-nav-item-dropdown text="Lang" right>
-              <b-dropdown-item href="#">EN</b-dropdown-item>
-              <b-dropdown-item href="#">ES</b-dropdown-item>
-              <b-dropdown-item href="#">RU</b-dropdown-item>
-              <b-dropdown-item href="#">FA</b-dropdown-item>
-            </b-nav-item-dropdown>
-
-            <b-nav-item-dropdown right>
-              <template #button-content>
-                <em>User</em>
-              </template>
-              <b-dropdown-item href="#">Profile</b-dropdown-item>
-              <b-dropdown-item href="#">Sign Out</b-dropdown-item>
-            </b-nav-item-dropdown>
-          -->
-            <b-nav-item href="#bases">Bases</b-nav-item>
-            <b-nav-item href="#ranking">Ranking</b-nav-item>
-            <b-nav-item href="#premios">Premios</b-nav-item>
-            <b-nav-item href="#preguntas">Preguntas Frecuentes</b-nav-item>
-            <b-nav-item href="#redes">Redes Sociales</b-nav-item>
+          <b-nav-item href="#bases" class="bni-opt">Bases</b-nav-item>
+          <b-nav-item href="#ranking" class="bni-opt">Ranking</b-nav-item>
+          <b-nav-item href="#premios" class="bni-opt">Premios</b-nav-item>
+          <b-nav-item href="#preguntas" class="bni-opt">Preguntas Frecuentes</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>

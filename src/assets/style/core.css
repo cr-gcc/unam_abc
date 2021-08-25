@@ -53,7 +53,7 @@
 }
 
 body{
-  font-family: "tw-sbi"
+  font-family: "tw-regular"
 }
 
 main{
@@ -82,12 +82,20 @@ ul li span {
   min-height: 100vh;
   flex-direction: column;
 }
-
-.bg-rd{
-  background-color: #a11512
+#header,{
+  font-family: "tw-bi"
+}
+.bg-blue{
+  background-color: #4941FF
 }
 .accent{
-  color: #29ed86;
+  color: #28EF87;
+}
+.bni-opt{
+  font-size: 20px;
+}
+.bases-title{
+  font-family: "tw-sbi";
 }
 /*PARALLAX*/
 .parallaxg{
@@ -103,21 +111,6 @@ ul li span {
   background-repeat: no-repeat; 
   background-position: top center;
 }
-.pi-one{
-  background-image: url(https://scontent.fmex15-1.fna.fbcdn.net/v/t31.18172-8/s960x960/29060250_177064182928789_4241154734695324164_o.jpg?_nc_cat=104&ccb=1-5&_nc_sid=e3f864&_nc_eui2=AeGzhwFaBqxznUhWz5UMczAnNIjjs-RlBgQ0iOOz5GUGBGsClKxgx4VOpIsnvlnz4mk&_nc_ohc=17TUpPDswxUAX_uxYw1&_nc_ht=scontent.fmex15-1.fna&oh=95a8348d24f8c28ceeeb571e0e70480b&oe=613FDFA2);
-}
-.pi-two{
-  background-image: url(https://e00-marca.uecdn.es/assets/multimedia/imagenes/2017/05/19/14951910928694.png);
-}
-.pi-three{
-  background-image: url(https://www.quever.news/u/fotografias/m/2021/2/26/f608x342-7265_36988_0.jpg);
-}
-.pi-four{
-  background-image: url(https://www.observatorioesclerosismultiple.com/fileadmin/user_upload/10-_preguntas-frecuentes-coronavirus-esclerosis-multiple.jpg);
-}
-.pi-five{
-  background-image: url(https://cdn-3.expansion.mx/dims4/default/c87ee23/2147483647/strip/true/crop/1273x824+0+0/resize/1800x1165!/format/webp/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F49%2Faf%2Fe767dace41d78b7c225ad293acbd%2Fistock-1205703732.jpg);
-}
 
 .h2t{
   letter-spacing: 10px; 
@@ -129,12 +122,43 @@ ul li span {
 }
 
 .hshadow{
-  background-color: rgba(0,0,0,.4);
+  background-color: rgba(0,0,0,.5);
   padding: 0 20px;
   border-radius: 20px;
 }
 
+.hst{
+  font-family: "tw-sbi";
+}
+
+.ur{
+  font-family: "tw-bold";
+}
+
 footer{
-  background: #343a40;
+  background: #4941FF;
   color: #fff;
+}
+.footer-opt{
+  font-size: 22px;
+  color: #fff;
+  font-family: "tw-light";
+}
+.footer-opt:hover{
+  font-family: "tw-bold";
+  color: #28EF87;
+}
+.footer-follow{
+  letter-spacing: 3px;
+  color: #28EF87;
+  font-family: "tw-light";
+}
+.footer-contacto{
+  color:  #fff;
+  font-size: 24px;
+}
+.footer-cpy{
+  letter-spacing: 4px;
+  font-family: "tw-light";
+  font-size: 18px;
 }
