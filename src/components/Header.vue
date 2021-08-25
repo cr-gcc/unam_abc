@@ -1,7 +1,6 @@
 <template>
   <div id="header">
     <b-navbar toggleable="lg" type="dark" variant="blue">
-      <!--<b-navbar-brand href="#">UNAM ABC</b-navbar-brand>-->
       <b-navbar-brand target="_blank">
         <a href="https://www.unam.mx/" class="mr-1 ml-1" target="_blank">
           <img height="60" :src="require('@/assets/images/logos/unam_w.png')" alt="UNAM">
