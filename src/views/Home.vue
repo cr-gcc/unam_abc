@@ -7,10 +7,12 @@
     </b-container>
     <!--BASES-->
     <section ref="bases" id="bases">
-      <div class="parallaxg" :style="piOne">
-        <h2 class="h2t">
-          <span class="hshadow hst">Academic Bicycle Challenge</span>
-        </h2>
+      <div class="parallaxg-init" :style="piOne">
+        <!--
+          <h2 class="h2t">
+            <span class="hshadow hst">Academic Bicycle Challenge</span>
+          </h2>
+        -->
       </div>
     </section>
     <b-container class="mt-4 mb-5 text-justify">

@@ -85,8 +85,8 @@ ul li span {
 #header,{
   font-family: "tw-bi"
 }
-.bg-blue{
-  background-color: #4941FF
+.bg-red{
+  background-color: #BF103A
 }
 .accent{
   color: #28EF87;
@@ -98,6 +98,19 @@ ul li span {
   font-family: "tw-sbi";
 }
 /*PARALLAX*/
+.parallaxg-init{
+  padding-top: 160px; 
+  padding-bottom: 160px; 
+  overflow: hidden; 
+  position: relative; 
+  width: 100%; 
+  background-attachment: absolute; 
+  background-size: cover; 
+  -moz-background-size: cover; 
+  -webkit-background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center;
+}
 .parallaxg{
   padding-top: 150px; 
   padding-bottom: 150px; 
@@ -136,7 +149,8 @@ ul li span {
 }
 
 footer{
-  background: #4941FF;
+  /*background: #4941FF;*/
+  background: #333;
   color: #fff;
 }
 .footer-opt{
