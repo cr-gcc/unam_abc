@@ -21,32 +21,32 @@
       <ul>
         <li>
           <span>
-            Podrán participar estudiantes, personal académico y personal administrativo, vigentes, de las entidades y dependencias de la Universidad Nacional Autónoma de México localizadas en la Zona Metropolitana del Valle de México, con apego a las normas de seguridad sanitaria definidas por las autoridades federal y locales.
+            Podrán participar estudiantes, personal académico y personal administrativo, vigentes, de las entidades y dependencias de la Universidad Nacional Autónoma de México, localizados en la Zona Metropolitana del Valle de México, con apego a las normas de seguridad sanitaria definidas por las autoridades federal y locales.
           </span>
         </li>
         <li>
           <span>
-            Podrán participar del 1º al 31 de octubre del presente año, realizando recorridos en bicicleta, en cualquier localización geográfica, considerando que las actividades académicas presenciales en los planteles, en el periodo señalado, puede seguir limitada.
+            Del 4 al 31 de octubre, podrán realizar recorridos en bicicleta por la ciudad, considerando que las actividades académicas presenciales en los planteles, en el periodo señalado, pueden seguir limitadas.
           </span>
         </li>
         <li>
           <span>
-            El registro y participación se realizará únicamente a través de la aplicación móvil definida por los organizadores, denominada “Naviki”, la cual se encuentra disponible, gratuitamente, dando clic: <a href="https://www.go-abc.org/for-participants/get-app/">AQUÍ</a>
+            El registro y participación se realizará únicamente a través de la aplicación móvil definida por los organizadores, denominada “Naviki”, la cual se encuentra disponible, gratuitamente, dando clic: <a href="https://www.go-abc.org/for-participants/get-app/" target="_blank">AQUÍ</a>
           </span>
         </li>
         <li>
           <span>
-            Se premiará quienes queden dentro de los primeros XX lugares, de acuerdo con las tablas de resultados oficiales (kilómetros acumulados) emitidas y publicadas por la organización <i><a href="https://www.go-abc.org/start/">Academic Bicycle Challenge</a></i>
+            Se premiará con bicicletas a quienes queden dentro de los primeros 3 lugares, de acuerdo con las tablas de resultados oficiales (kilómetros acumulados) emitidas y publicadas por la organización Academic Bicycle Challenge, mediante el sitio: <i><a href="https://www.go-abc.org/start/" target="_blank">Academic Bicycle Challenge</a></i>
           </span>
         </li>
         <li>
           <span>
-            Los resultados serán inapelables. El kilometraje de cada participante será medido por la organización Academic Bicycle Challenge, a través de su aplicación, por lo que la UNAM, no tiene injerencia alguna.
+            Los resultados serán inapelables. El kilometraje de cada participante será medido por la organización Academic Bicycle Challenge, a través de su aplicación, por lo que la UNAM, no tendrá injerencia alguna.
           </span>
         </li>
         <li>
           <span>
-            Quienes resulten ganadores, serán contactados vía correo electrónico para verificar la vigencia de su registro como parte de la comunidad universitaria.
+            Quienes resulten ganadores serán contactados vía correo electrónico para verificar la vigencia de su registro como parte de la comunidad universitaria.
           </span>
         </li>
         <li>
@@ -56,7 +56,7 @@
         </li>
         <li>
           <span>
-            Toda información referente a esta actividad se publicará a través las redes de la Dirección General de Atención a la Comunidad, de la Coordinación Universitaria para la Sustentabilidad y de la Dirección General de Servicios Generales y Movilidad 
+            Toda información referente a esta actividad se publicará a través las redes de la Dirección General de Atención a la Comunidad, de la Coordinación Universitaria para la Sustentabilidad y de la Dirección General de Servicios Generales y Movilidad de la UNAM. 
           </span>
         </li>
       </ul>
@@ -104,7 +104,7 @@
           </b-tr>
         </b-tbody>
       </b-table-simple>
-      <p>Para más información visita <a href="https://www.go-abc.org/es/leaderboards/worldwide-absolute/">Academic Bicycle Challenge</a></p>
+      <p>Para más información visita <a href="https://www.go-abc.org/es/leaderboards/worldwide-absolute/" target="_blank">Academic Bicycle Challenge</a></p>
     </b-container>
     <!--PREMIOS-->
     <section ref="premios" id="premios">
@@ -115,7 +115,11 @@
       </div>
     </section>
     <b-container class="mt-4 mb-5 text-justify">
-      <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+      <p>
+        <strong>
+          Habrá premios para los primeros lugares, ¡mantente al tanto para conocer más detalles!
+        </strong>
+      </p>
     </b-container>
     <!--PREGUNTAS-->
     <section ref="preguntas" id="preguntas">
@@ -126,31 +130,110 @@
       </div>
     </section>
     <b-container class="mt-4 mb-5 text-justify">
-      <ul>
+      <ul class="slist">
         <li>
-          <span>¿Puedo participar si soy ex-alumno/a de la UNAM?</span>
-        </li>
-        <li>
-          <span>¿Puedo participar si mi facultad/escuela/instituto se encuentra fuera de la Zona Metropolitana del Valle de México?
+          <span>
+            <strong>¿Cuándo puedo participar?</strong>
+            <br>Del 4 al 31 de octubre de este año.  
           </span>
         </li>
-        <li>
-          <span>¿Cómo se contarán los kilómetros que recorra?</span>  
-        </li>
-        <li>
-          <span>¿Hay un límite de kilómetros diarios por recorrer?
+        <li class="mt-3">
+          <span>
+            <strong>¿Cómo puedo registrarme?</strong>
+            <br>El registro y participación se realizarán únicamente a través de la aplicación móvil definida por la organización del reto, denominada “Naviki”, la cual se encuentra disponible gratuitamente dando clic <a href="https://www.go-abc.org/for-participants/get-app/" target="_blank">AQUÍ</a>
           </span>
         </li>
-        <li>
-          <span>¿Cómo puedo participar si no tengo una bici?
+        <li class="mt-3">
+          <span>
+            <strong>¿Para qué se hace este concurso?</strong>
+            <br>Para promover el uso de la bicicleta entre la comunidad universitaria, impulsar estilos de vida más saludables, generar condiciones climáticas favorables y contribuir a la toma de conciencia de estos temas en una escala global.  
           </span>
         </li>
-        <li>
-          <span>¿Cómo sabré si soy ganador/a?
+        <li class="mt-3">
+          <span>
+            <strong>¿Debo realizar algún pago para poder participar?</strong>
+            <br>No. El acceso al concurso es completamente gratuito. En “Naviki” (la app de registro) podrás encontrar algunas compras internas, sin embargo, ninguno de estos elementos es requerido para tu participación.  
           </span>
         </li>
-        <li>
-          <span>¿Por qué la bicicleta es un medio de transporte sustentable?
+        <li class="mt-3">
+          <span>
+            <strong>¿Puedo participar si soy ex-alumnx de la UNAM?</strong>
+            <br>No, el reto solo permite la participación de estudiantes, personal académico y personal administrativo que cuenten con un estatus vigente.  
+          </span>
+        </li>
+        <li class="mt-3">
+          <span>
+            <strong>¿Puedo participar si mi facultad/escuela/instituto se encuentra fuera de la Zona Metropolitana del Valle de México?</strong>
+            <br>No, este año solo podrán participar los campus de la Zona Metropolitana del Valle de México.  
+          </span>
+        </li>
+        <li class="mt-3">
+          <span>
+            <strong>¿Por qué debo usar la app Naviki?</strong>
+            <br>Es la app utilizada por los organizadores del concurso para que en ella se registren las rutas y así mantener un correcto seguimiento del kilometraje recorrido por los y las participantes en todo el mundo.  
+          </span>
+        </li>
+        <li class="mt-3">
+          <span>
+            <strong>¿Qué debo hacer para registrarme en la app de Naviki?</strong>
+            <br>
+            <ol>
+              <li>
+                <span>
+                  Descarga la aplicación Naviki en tu teléfono. 
+                </span>
+              </li>
+              <li>
+                <span>
+                  Selecciona la opción "Más" en el menú principal. 
+                </span>
+              </li>
+              <li>
+                <span>
+                  Selecciona "Iniciar sesión" e introduce tus datos de convocatorias anteriores o crea un nuevo registro mediante el ingreso de datos en el apartado "Registrar ahora". 
+                </span>
+              </li>
+              <li>
+                <span>
+                  Regresa al menú "Más" y selecciona la opción "Competiciones". 
+                </span>
+              </li>
+              <li>
+                <span>
+                  Selecciona "Academic Bicycle Challenge (ABC) 2021". 
+                </span>
+              </li>
+              <li>
+                <span>
+                  Activa la opción "Estoy participando".
+                </span>
+              </li>
+            </ol>
+            Los kilómetros recorridos únicamente se registran si llevas contigo el teléfono donde se ha iniciado sesión en la aplicación Naviki. No es necesario tener activados los datos móviles para el registro de kilómetros; sin embargo, es necesario conectarse a internet en algún momento antes del final de la competencia para que la aplicación registre los kilómetros recorridos.
+          </span>
+        </li>
+        <li class="mt-3">
+          <span>
+            <strong>¿Hay un límite de kilómetros?</strong>
+            <br>¡Los límites los pones tú! La app contará todos los kilómetros que realices al día.  
+          </span>
+        </li>
+        <li class="mt-3">
+          <span>
+            <strong>¿Puedo ir a rodar a C.U.?</strong>
+            <br>¡Por su puesto! Todos los kilómetros que realices dentro y fuera de C.U se tomarán en cuenta.  
+          </span>
+        </li>
+        <li class="mt-3">
+          <span>
+            <strong>¿Cómo sabré si soy ganador/a?</strong>
+            <br>Si resultas ganador o ganadora se te contactará vía correo electrónico con todos los detalles respecto a la fecha, hora, lugar y condiciones de la entrega de premios.  
+          </span>
+        </li>
+        <li class="mt-3">
+          <span>
+            <strong>¿Cómo puedo estar al tanto de todo lo relacionado con el ABC?</strong>
+            <br>A través de la cuenta oficial del ABC UNAM en Instagram: <a href="https://www.instagram.com/abc.unam/?hl=es" target="_blank">@abc.unam</a>, y en las redes de la Dirección General de Atención a la Comunidad, la Coordinación Universitaria para la Sustentabilidad y la Dirección General de Servicios Generales y Movilidad de la UNAM.  
           </span>
         </li>
       </ul>

@@ -9,6 +9,6 @@ module.exports = {
   },
   //
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/unam_abc'
+    ? '/'/*'/unam_abc'*/
     : '/',
 }

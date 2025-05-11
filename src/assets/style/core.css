@@ -97,6 +97,11 @@ ul li span {
 .bases-title{
   font-family: "tw-sbi";
 }
+
+.slist{
+  letter-spacing: .5px;
+}
+
 /*PARALLAX*/
 .parallaxg-init{
   padding-top: 160px; 
